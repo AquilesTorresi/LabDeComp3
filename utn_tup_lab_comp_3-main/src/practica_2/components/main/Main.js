@@ -1,15 +1,21 @@
 import Body from "../body/Body"
+import BlogPost from "../blogpost/BlogPost"
 
-const Main = ({pageBody }) => {
+const Main = ({children}) => {
   return (
-    <Body pageBody={pageBody}>
+    <>
+    <div className="Main">
+      <Body body={children}/>
+    </div>
+    <BlogPost/>
       <nav>
-        <ul>
-          <li><a href="https://www.twiter.com">twiter</a></li>
-          <li><a href="https://www.facebook.com">facebook</a></li>
-        </ul>
+          <ul>
+              <li><a href="https://www.twitter.com">twiter</a></li>
+              <li><a href="https://www.facebook.com">facebook</a></li>
+              <h3> Hola esto es la practica DOS de Lab de Comp. </h3>
+          </ul>
       </nav>
-    </Body>
+    </>
   )
 }
 

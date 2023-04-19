@@ -1,8 +1,10 @@
 import Title from "../title/Title"
 
-const Header = ({pageTitle}) => {
+const Header = ({children}) => {
   return (
-    <Title pageTitle = {pageTitle}></Title>
+    <div className="Header-container">
+      <Title title = {children}/>
+    </div>
   )
 }
 // <Etiqueta propiedades={valorDeLaPropiedad}></Etiqueta>

@@ -1,7 +1,11 @@
-
-const Page = ({children}) => {
+import Main from "../main/Main"
+import Header from "../header/Header"
+const Page = ({title, body}) => {
   return (
-    <>¨{children}</>
+    <>
+      <Header>{title}</Header>
+      <Main>{body}</Main>
+    </>
   )
 }
 

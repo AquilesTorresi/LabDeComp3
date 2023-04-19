@@ -1,7 +1,7 @@
-const Body = ({pageBody}) => {
+const Body = ({body}) => {
   return (
     <div>
-        {pageBody}
+        {body}
     </div>
   )
 }

@@ -129,15 +129,15 @@ const filterMovies = (watchlist) => {
 }
 const returnMovieTitle = (watchlist) => {
 	 // Aquí adentro escriban la función para mostrar titulo
-	function mostarTitle (movie) {
-	  return ( <div> Title </div> )
+	  return watchlist.map((movie) => (movie.Title))
 	}
-	return [];
-}
+
 const sumOfDuration = (watchlist) => {
     // Aquí adentro escriban la función para sumarizar
 
-	return 0;
+	return watchlist.reduce((previousSum, currentMovie) => (
+		previousSum + parseInt(currentMovie.Runtime, 10)
+	),0);
 }
 export default function Practica1 () {
 	let moviesFiltered = filterMovies(watchList);
@@ -158,6 +158,3 @@ export default function Practica1 () {
         </div>
     )
 } 
-
-// 
-// 
